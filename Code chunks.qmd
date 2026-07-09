@@ -19,5 +19,58 @@ lang: it
 bibliography: biblio.bib
 reference-location: margin
 citation-location: margin
+execute:
+  echo: false
 ---
+
+```{r}
+#| lst-label: lst-default
+#| lst-cap: Default settings
+head(cars)
+```
+
+
+
+```{r}
+#| echo: false
+#| lst-label: lst-echoF
+#| lst-cap: Echo FALSE
+head(cars)
+```
+
+
+```{r}
+#| echo: true
+#| eval: false
+#| lst-label: lst-echoF
+#| lst-cap: Echo TRUE and eval FALSE
+head(cars)
+```
+
+@fig-normal presents a normal distribution
+
+```{r}
+#| label: fig-normal
+#| fig-cap: A normal distribution
+x = seq(-3,3, length.out = 10000)
+dx = dnorm(x)
+plot(x, dx, type = "l", cex = 2, lwd = 3)
+```
+
+
+
+@fig-normalProperties illustrates properties. @fig-normalProperties-1, @fig-normalProperties-2 and @fig-normalProperties-3
+
+```{r}
+#| layout-ncol: 3
+#| label: fig-normalProperties
+#| fig-cap: Normal distribution
+#| fig-subcap:
+#|   - "Density"
+#|   - "Cumulative"
+#|   - "Quantile"
+plot(x, dx, type = "l", cex = 2, lwd = 3)
+plot(x, pnorm(x), type = "l", cex = 2, lwd = 3)
+plot( pnorm(x),qnorm( pnorm(x)), type = "l", cex = 2, lwd = 3)
+```
 

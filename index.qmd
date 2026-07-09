@@ -63,4 +63,8 @@ This is my third column
 
 :::
 
+
+For further details look at the [code chunk](Code chunks.html)file.
+
+
 ![This is an image](images/image.jpeg)

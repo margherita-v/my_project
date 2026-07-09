@@ -1,7 +1,12 @@
 ---
 title: "Website"
-format: html
-editor: visual
+author: "Margherita"
+format:
+  html:
+    theme:
+      light: minty
+      dark: superhero
+self-contained: true 
 ---
 
 # Presentation

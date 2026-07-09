@@ -3,12 +3,33 @@ title: "Website"
 author: "Margherita"
 format:
   html:
+    toc: true
+    toc-location: left
+    number-sections: true
+    grid:
+      sidebar-width: 200px
+      body-width: 900px
+      margin-width: 400px
+      gutter-width: 1.5rem
     theme:
       light: minty
       dark: superhero
 self-contained: true 
+lang: it
 ---
 
 # Presentation
 
 This is Margherita's website
+
+## Sub presentation
+
+Sub section
+
+### Sub sub section
+
+Another sub sub sub section
+
+#### My paragraph
+
+This is a paragraph

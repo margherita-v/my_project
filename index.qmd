@@ -16,20 +16,51 @@ format:
       dark: superhero
 self-contained: true 
 lang: it
+bibliography: biblio.bib
+reference-location: margin
+citation-location: margin
 ---
 
 # Presentation
 
-This is Margherita's website
+This is Margherita's website [@ggplot]
+
+And this is a Pizza
+
+![a pizza](images/image.jpeg)
+
 
 ## Sub presentation
 
-Sub section
+Sub section $X = V + E$
+
 
 ### Sub sub section
 
 Another sub sub sub section
 
+@eq-ctt shows the basic equation in classic test theory.
+
+:::{.column-margin}
+
 #### My paragraph
 
 This is a paragraph
+
+:::{.grid}
+
+:::{.g-col-4}
+This is my first column
+:::
+
+:::{.g-col-4}
+This is my second column
+:::
+
+:::{.g-col-4}
+This is my third column
+:::
+
+:::
+
+![This is an image](images/image.jpeg)
